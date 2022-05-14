@@ -1,6 +1,4 @@
 <script>
-    export let actual_route;
-
     const routes = [
       {
         name: 'Home',
@@ -18,38 +16,32 @@
     }
 </script>
 
-<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
-    <div class="container flex flex-wrap justify-between items-center mx-auto">
-    <a href="/" class="flex items-center">
-        <img src="https://picsum.photos/200" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">RAT</span>
-    </a>
-    <div class="flex md:order-2">
-        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
-        <button on:click={ShowHideNavbar} data-collapse-toggle="mobile-menu-4" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-4" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-      </button>
-    </div>
-    <div class={"justify-between items-center w-full md:flex md:w-auto md:order-1" + (navbarOpen ? " flex" : " hidden")} id="mobile-menu-4">
-      <ul class="flex flex-col mt-4 md:flex-row w-full md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-        {#each routes as route}
-          {#if route.name == actual_route}
-            <li>
-              <a href={route.route} class="block py-2 pr-4 pl-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white" aria-current="page">
-                {route.name}
-              </a>
-            </li>
-          {:else}
-            <li>
-              <a href={route.route} class="block py-2 pr-4 pl-3 text-gray-300 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">
-                {route.name}
-              </a>
-            </li>
-          {/if}
-        {/each}
-      </ul>
-    </div>
-    </div>
-  </nav>
+<aside class="w-64" aria-label="Sidebar">
+  <div class="overflow-y-auto py-4 px-3 bg rounded absolute h-full">
+     <ul class="space-y-2">
+       {#each routes as route}
+        <li>
+          <a href={route.route} class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 ">
+            <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+            <span class="ml-3 text-xl">{route.name}</span>
+          </a>
+        </li>
+       {/each}
+     </ul>
+     <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 ">
+        <li>
+           <a href="/" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 group">
+              <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gem" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M378.7 32H133.3L256 182.7L378.7 32zM512 192l-107.4-141.3L289.6 192H512zM107.4 50.67L0 192h222.4L107.4 50.67zM244.3 474.9C247.3 478.2 251.6 480 256 480s8.653-1.828 11.67-5.062L510.6 224H1.365L244.3 474.9z"></path></svg>
+              <span class="ml-3 text-xl">Upgrade to Pro</span>
+           </a>
+        </li>
+
+     </ul>
+  </div>
+</aside>
+
+<style>
+  .bg{
+    background: #ffffff50;
+  }
+</style>
