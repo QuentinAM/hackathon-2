@@ -187,7 +187,7 @@
 <Background/>
 <div class="pt-10 pb-0 md:pb-64">
     <!--Center -->
-    <div class='container mx-auto ml-5 lg:px-4'>
+    <div class='container mx-auto ml-5 md:mx-64 md:mt-10 lg:px-4'>
         <div class="flex flex-wrap justify-center">
             <div class="w-3/4 md:w-3/4 lg:w-2/3 lg:p-4">
                 <div class="dark:bg-gray-800 border dark:border-gray-700 shadow-md rounded pt-6 pb-6 mb-4">
@@ -220,7 +220,7 @@
                         <div class='px-6'>
                             <progress value={$progress}></progress>
                         </div>
-                        <button type="button" class="ml-5 px-6 text-white bg-blue-800 hover:bg-blue-900 focus:outline-none mt-4 focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm py-2.5 text-center mb-2">
+                        <button type="button" class="ml-5 px-6 active:bg-blue-900 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none mt-4 font-medium rounded-full text-sm py-2.5 text-center mb-2">
                             Invest
                         </button>
                     </div>

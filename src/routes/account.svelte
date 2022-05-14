@@ -7,6 +7,7 @@
     import Footer from "../components/footer.svelte";
     import Background from "../components/background.svelte";
     import Login from "../components/login.svelte";
+    import ConnectWallet from "../components/connect_wallet.svelte";
 </script>
 
 <Navbar/>
@@ -17,9 +18,12 @@
             <span class="text-slate-300">Account</span>
         </h1>
         <h2 class="text-lg font-semibold leading-tight">
-            <span class="text-slate-300">Sign in to access your projects on our platform.</span>
+            <span class="text-slate-300">Sign in to access and manage your projects.</span>
         </h2>
-        <Login class='mt-12'/>
+        <div class="flex">
+            <Login class='mt-12'/>
+            <ConnectWallet/>
+        </div>
     </div>
 </div>
 <Footer/>

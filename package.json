@@ -26,6 +26,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "mdbsvelte": "^1.0.12",
     "svelte-chartjs": "^1.1.4",
-    "svelte-loading-spinners": "^0.1.7"
+    "svelte-loading-spinners": "^0.1.7",
+    "svelte-parallax": "^0.5.2"
   }
 }
