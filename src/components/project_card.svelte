@@ -16,7 +16,7 @@
 
 </script>
 
-<div class="rounded w-4/5 bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700">
+<div class="rounded w-full md:3/5 bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700">
     <img class="w-full h-40 rounded-t hover:cursor-pointer" on:click={Redirect} src={img_src} alt="">
     <div class="px-6 py-4">
       <div class="font-bold text-white text-xl mb-2">

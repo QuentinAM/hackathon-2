@@ -1,21 +1,18 @@
 <svelte:head>
-  <title>Home</title>
+  <title>About</title>
 </svelte:head>
 
 <script>
   import Navbar from "../components/navbar.svelte";
   import Footer from "../components/footer.svelte";
   import Background from "../components/background.svelte";
-  import ConnectWallet from "../components/connect_wallet.svelte";
-  import Title from "../components/title.svelte";
 </script>
 
 <Navbar/>
 <Background/>
-<div class="pt-20 pb-[8rem] lg:pb-64">
-    <div class="ml-3 md:ml-64">
-        <Title/>
-        <ConnectWallet/>
+<div class="pt-20 pb-64">
+    <div class="mx-64">
+
     </div>
 </div>
 <Footer class='mt-14'/>

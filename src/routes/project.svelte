@@ -185,11 +185,11 @@
 
 <Navbar/>
 <Background/>
-<div class="pt-20 pb-64">
+<div class="pt-10 pb-0 md:pb-64">
     <!--Center -->
-    <div class='container mx-auto px-4'>
+    <div class='container mx-auto ml-5 lg:px-4'>
         <div class="flex flex-wrap justify-center">
-            <div class="w-full md:w-3/4 lg:w-2/3 p-4">
+            <div class="w-3/4 md:w-3/4 lg:w-2/3 lg:p-4">
                 <div class="dark:bg-gray-800 border dark:border-gray-700 shadow-md rounded pt-6 pb-6 mb-4">
                     <div class="loader flex">
                         <RingLoader/>
@@ -229,7 +229,7 @@
         </div>
     </div>
 </div>
-<Footer class="mt-96"/>
+<Footer/>
 
 <style>
     progress {

@@ -54,12 +54,12 @@
 
 <Navbar/>
 <Background/>
-<div class="pt-20 pb-64">
-    <div class="ml-64">
-        <h1 class="text-4xl font-bold leading-tight">
+<div class="pt-20 pb-[8rem] lg:pb-64">
+    <div class="ml-10 md:ml-64">
+        <h1 class="text-4xl md:ml-0 ml-10 font-bold leading-tight">
             <span class="text-slate-300">ICO</span>
         </h1>
-        <h2 class="text-lg font-semibold leading-tight">
+        <h2 class="text-lg md:ml-0 ml-10 font-semibold leading-tight">
             <span class="text-slate-300">Initial coin offering</span>
         </h2>
 

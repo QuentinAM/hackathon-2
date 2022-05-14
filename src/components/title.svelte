@@ -1,9 +1,28 @@
-<svg height="100" width="1000" stroke="#2A4A73" stroke-width="2" class="text-line">
-    <text style="font-family: 'Baloo Tamma', georgia, times, serif; font-weight: normal; font-style: normal" x="50" y="90" fill="none" font-size = "100">
+<script>
+  import { onMount } from "svelte/internal";
+
+  var isSmallScreen = true;
+
+  onMount(() => {
+    isSmallScreen =  window.innerWidth < 768;
+  });
+
+</script>
+
+{#if isSmallScreen}
+  <svg height="100" width="320" stroke="#2A4A73" stroke-width="2" class="text-line">
+    <text style="font-family: 'Baloo Tamma', georgia, times, serif; font-weight: normal; font-style: normal" x="50" y="90" fill="none" font-size = "65">
         RatPonzi
     </text>
-</svg>
-  
+  </svg>
+{:else}
+  <svg height="100" width="1000" stroke="#2A4A73" stroke-width="2" class="text-line">
+      <text style="font-family: 'Baloo Tamma', georgia, times, serif; font-weight: normal; font-style: normal" x="50" y="90" fill="none" font-size = "100">
+          RatPonzi
+      </text>
+  </svg>
+{/if}
+
 <style lang="scss">
 body{
     background-color: #ECEAEA;
