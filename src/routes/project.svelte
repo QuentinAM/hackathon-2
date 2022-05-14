@@ -190,7 +190,7 @@
     <div class='container mx-auto px-4'>
         <div class="flex flex-wrap justify-center">
             <div class="w-full md:w-3/4 lg:w-2/3 p-4">
-                <div class="dark:bg-gray-800 border dark:border-gray-700 shadow-md rounded px-6 pt-6 pb-6 mb-4">
+                <div class="dark:bg-gray-800 border dark:border-gray-700 shadow-md rounded pt-6 pb-6 mb-4">
                     <div class="loader flex">
                         <RingLoader/>
                         <div class="w-full">
@@ -200,15 +200,15 @@
                         </div>  
                     </div>
                     <div class="card hidden">
-                        <img class="w-full h-52 rounded-tl object-cover -m-6" src={img_src} alt="">
-                        <div class="flex flex-wrap">
+                        <img class="w-full h-52 rounded-tl object-cover -my-6" src={img_src} alt="">
+                        <div class="flex px-6 flex-wrap">
                             <div class="w-full">
                                 <h1 class="text-2xl text-white font-bold text-center dark:bg-gray-800 dark:border-gray-700 p-4 rounded-3xl">
                                     {title}
                                 </h1>
                             </div>
                         </div>
-                        <div class="flex flex-wrap">
+                        <div class="flex px-6 flex-wrap">
                             <div class="w-full">
                                 <p class="text-gray-500 dark:text-gray-400 text-center">
                                     {description}
@@ -217,8 +217,10 @@
                         </div>
                         
                         <Statscard {goal} {money_earned} {total_contributor} {day_left} {crypto_used} {crypto_link}/>
-                        <progress value={$progress}></progress>
-                        <button type="button" class="text-white bg-blue-800 hover:bg-blue-900 focus:outline-none mt-4 focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2">
+                        <div class='px-6'>
+                            <progress value={$progress}></progress>
+                        </div>
+                        <button type="button" class="ml-5 px-6 text-white bg-blue-800 hover:bg-blue-900 focus:outline-none mt-4 focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm py-2.5 text-center mb-2">
                             Invest
                         </button>
                     </div>

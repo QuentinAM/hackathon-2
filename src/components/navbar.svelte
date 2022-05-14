@@ -39,7 +39,7 @@
     }
 </script>
 
-<aside class="w-64" aria-label="Sidebar">
+<aside class=" z-10 w-64" aria-label="Sidebar">
   <div class="overflow-y-auto py-4 px-3 bg absolute h-full">
      <ul class="space-y-2">
        {#each routes as route}

@@ -7,7 +7,7 @@
     export let crypto_link;
 </script>
 
-<section class="stats-card">
+<section class="stats-card px-6">
     <div class="stats">
       <div class="each-stat">
         <h1 class="top text-slate-200">{money_earned}</h1>
