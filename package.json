@@ -18,11 +18,14 @@
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",
     "svelte": "^3.44.0",
+    "svelte-fa": "^2.4.0",
     "tailwindcss": "^3.0.24"
   },
   "type": "module",
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "mdbsvelte": "^1.0.12",
-    "svelte-chartjs": "^1.1.4"
+    "svelte-chartjs": "^1.1.4",
+    "svelte-loading-spinners": "^0.1.7"
   }
 }
