@@ -13,7 +13,7 @@
 
 <article>
     <div class="flex items-center mb-4 space-x-4">
-        <img class="w-10 h-10 rounded-full" src={img_src} alt="">
+        <img loading='lazy' class="w-10 h-10 rounded-full" src={img_src} alt="">
         <div class="space-y-1 font-medium dark:text-white">
             <p>{name}<time datetime="2014-08-16 19:00" class="block text-sm text-gray-500 dark:text-gray-400">
                 Joined on {joined_on}

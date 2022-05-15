@@ -20,7 +20,8 @@
             goal: 10000,
             total_contributor: 11,
             day_left: 84,
-            img_src: './images/CDFI_bg.png'
+            img_src: './images/CDFI_bg.png',
+            tag: 'NFT'
         },
         {
             id: 46,
@@ -33,7 +34,8 @@
             goal: 5000,
             total_contributor: 13,
             day_left: 107,
-            img_src: './images/SCOP_bg.jpeg'
+            img_src: './images/SCOP_bg.jpeg',
+            tag: 'Wallet'
         },
         {
             id: 47,
@@ -46,7 +48,8 @@
             goal: 7000,
             total_contributor: 841,
             day_left: 2,
-            img_src: './images/RAT_bg.png'
+            img_src: './images/RAT_bg.png',
+            tag: 'RAT'
         }
     ];  
 
@@ -74,6 +77,7 @@
                     goal={project.goal}
                     money_earned={project.money_earned}
                     img_src={project.img_src}
+                    tag={project.tag}   
                 />
             {/each}  
         </div>

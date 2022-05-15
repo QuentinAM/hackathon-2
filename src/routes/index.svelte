@@ -22,7 +22,8 @@
             goal: 10000,
             total_contributor: 11,
             day_left: 84,
-            img_src: './images/LBLOCK_bg.png'
+            img_src: './images/LBLOCK_bg.png',
+            tag: 'Gaming'
         },{
             id: 50,
             title: "Galaxy",
@@ -34,19 +35,21 @@
             goal: 7000,
             total_contributor: 841,
             day_left: 2,
-            img_src: './images/GAL_bg.jpg'
-        },{
-            id: 46,
-            title: "SCOPULY",
-            crypto_used : "SCOP",
-            crypto_link: './images/SCOP.jpg',
-            rating : "0.6",
-            description: 'Scopuly is a new DeFi-style digital banking ecosystem built to promote digital lifestyles and enable people to manage their money online – quickly and with minimal fees.',
-            money_earned: 300,
-            goal: 5000,
-            total_contributor: 13,
-            day_left: 107,
-            img_src: './images/SCOP_bg.jpeg'
+            img_src: './images/GAL_bg.jpg',
+            tag: 'Marketing'
+        }, {
+            id: 4545,
+            title: "Peermoon",
+            crypto_used : "PM",
+            crypto_link: 'https://cryptototem.com/wp-content/uploads/2022/01/Peermoon-logo.jpg',
+            rating : "4.3",
+            description: 'Peermoon is a DeFi mobile wallet that allows you investing and managing your finance conveniently in one app.',
+            money_earned: 2500,
+            goal: 7000,
+            total_contributor: 642,
+            day_left: 7,
+            img_src: 'https://peermoon.io/wp-content/uploads/2021/12/earth6.png',
+            tag: 'Wallet'
         }
   ];
 
@@ -88,6 +91,7 @@
                         money_earned={project.money_earned}
                         img_src={project.img_src}
                         main_page={true}
+                        tag={project.tag}
                     />
               {/each}
             </div>

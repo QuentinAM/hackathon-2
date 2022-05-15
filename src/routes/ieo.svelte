@@ -20,7 +20,8 @@
             goal: 10000,
             total_contributor: 11,
             day_left: 84,
-            img_src: './images/ICOM_bg.jpg'
+            img_src: './images/ICOM_bg.jpg',
+            tag: 'Com'
         },
         {
             id: 49,
@@ -33,7 +34,8 @@
             goal: 5000,
             total_contributor: 13,
             day_left: 107,
-            img_src: './images/ECOREAL_bg.png'
+            img_src: './images/ECOREAL_bg.png',
+            tag: 'Payments'
         },
         {
             id: 50,
@@ -46,7 +48,8 @@
             goal: 7000,
             total_contributor: 841,
             day_left: 2,
-            img_src: './images/GAL_bg.jpg'
+            img_src: './images/GAL_bg.jpg',
+            tag: 'Marketing'
         }
     ]
 
@@ -74,6 +77,7 @@
                     goal={project.goal}
                     money_earned={project.money_earned}
                     img_src={project.img_src}
+                    tag={project.tag}
                 />
             {/each}  
         </div>

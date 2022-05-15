@@ -133,7 +133,7 @@
                     name: "Suzann Lee",
                     joined_on: "March 2022",
                     title: "One of the worst project I have seen",
-                    rating: 5,
+                    rating: 0.6 ,
                     date: "1 April 2022",
                     description: "I don't understand the project",
                     peoples: 0,
@@ -248,6 +248,19 @@
             total_contributor: 841,
             day_left: 2,
             img_src: './images/DEFY_bg.jpg',
+        },
+        {
+            id: 4545,
+            title: "Peermoon",
+            crypto_used : "PM",
+            crypto_link: 'https://cryptototem.com/wp-content/uploads/2022/01/Peermoon-logo.jpg',
+            rating : "4.8",
+            description: 'Peermoon is a DeFi mobile wallet that allows you investing and managing your finance conveniently in one app.',
+            money_earned: 2500,
+            goal: 7000,
+            total_contributor: 642,
+            day_left: 7,
+            img_src: 'https://peermoon.io/wp-content/uploads/2021/12/earth6.png'
         }
     ];
 
@@ -314,7 +327,7 @@
                         </div>  
                     </div>
                     <div class="card hidden">
-                        <img class="w-full h-52 rounded-tl object-cover -my-6" src={img_src} alt="">
+                        <img loading='lazy' class="w-full h-52 rounded-tl object-cover -my-6" src={img_src} alt="">
                         <div class="flex px-6 flex-wrap">
                             <div class="w-full">
                                 <h1 class="text-2xl text-white font-bold text-center dark:bg-gray-800 dark:border-gray-700 p-4 rounded-3xl">

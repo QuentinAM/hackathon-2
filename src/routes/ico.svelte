@@ -20,7 +20,8 @@
             goal: 10000,
             total_contributor: 11,
             day_left: 84,
-            img_src: './images/LBLOCK_bg.png'
+            img_src: './images/LBLOCK_bg.png',
+            tag: 'Gaming'
         },
         {
             id: 4436,
@@ -33,7 +34,8 @@
             goal: 5000,
             total_contributor: 13,
             day_left: 107,
-            img_src: './images/ZKS_bg.jpeg'
+            img_src: './images/ZKS_bg.jpeg',
+            tag: 'Payments'
         },
         {
             id: 4346,
@@ -46,7 +48,22 @@
             goal: 7000,
             total_contributor: 841,
             day_left: 2,
-            img_src: './images/DEFY_bg.jpg'
+            img_src: './images/DEFY_bg.jpg',
+            tag: 'Science'
+        },
+        {
+            id: 4545,
+            title: "Peermoon",
+            crypto_used : "PM",
+            crypto_link: 'https://cryptototem.com/wp-content/uploads/2022/01/Peermoon-logo.jpg',
+            rating : "4.3",
+            description: 'Peermoon is a DeFi mobile wallet that allows you investing and managing your finance conveniently in one app.',
+            money_earned: 2500,
+            goal: 7000,
+            total_contributor: 642,
+            day_left: 7,
+            img_src: 'https://peermoon.io/wp-content/uploads/2021/12/earth6.png',
+            tag: 'Wallet'
         }
     ];
 
@@ -74,6 +91,7 @@
                     goal={project.goal}
                     money_earned={project.money_earned}
                     img_src={project.img_src}
+                    tag={project.tag}
                 />
             {/each}  
         </div>
