@@ -353,7 +353,7 @@
                     </div>
                     <hr class="border border-solid bg-slate-200 my-2 mx-3 card hidden">
 
-                    <div class="p-4 h-64 overflow-scroll card hidden">
+                    <div class="p-4 h-64 overflow-auto card hidden">
 
                         {#each reviews as review}
                             <Review

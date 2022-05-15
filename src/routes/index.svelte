@@ -79,7 +79,7 @@
               <span class="text-slate-300 font-semibold text-lg">
                 ⚡ Last projects on our platform.
               </span>
-              <div class="h-[40rem] overflow-scroll">
+              <div class="h-[40rem] overflow-auto">
               {#each projects as project}
                     <ProjectCard 
                         id={project.id}

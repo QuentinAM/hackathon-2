@@ -66,7 +66,7 @@
             <span class="text-slate-300">Initial Dex Offering</span>
         </h2>
 
-        <div class="p-10 -mb-40 overflow-scroll h-[40rem] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+        <div class="p-10 -mb-40 overflow-auto h-[40rem] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
             {#each projects as project}
                 <ProjectCard 
                     id={project.id}

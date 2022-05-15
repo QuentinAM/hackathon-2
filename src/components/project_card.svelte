@@ -27,7 +27,7 @@
       <div class="font-bold text-white text-xl mb-2">
           {title}
       </div>
-      <p class="text-gray-500 dark:text-gray-400 text-base h-20 overflow-scroll">
+      <p class="text-gray-500 dark:text-gray-400 text-base h-20 overflow-auto">
         {description}
       </p>
     </div>
