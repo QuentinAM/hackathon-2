@@ -59,14 +59,24 @@
         <Title/>
         <h2 class="text-focus-in text-lg md:ml-14 ml-10 font-semibold leading-tight">
           <span class="text-slate-300">
-            Your new cypto launching platform.
+            🚀 Your new cypto launching platform.
           </span>
         </h2>
         <div class="flex text-focus-in2 pt-10">
-          <span class="text-slate-300 mt-10 ml-20">
-              Explore a large selection of projects and start your own.
+          <span class="text-slate-300 mt-10 ml-20 font-semibold leading-[2.75rem] shadow border-slate-400 text-xl border p-2 rounded h-40">
+              🌍 Explore a large selection of projects and start your own.
+              <p>
+                ⚙️ Easy to use.
+              </p>
+              <p>
+                💸 Invest in your favorite project and get interest on it.
+              </p>
           </span>
-          <div class="h-[40rem] w-[20rem] ml-40 overflow-scroll">
+          <div class="h-[40rem] w-[20rem] ml-80 ">
+              <span class="text-slate-300 font-semibold text-lg">
+                ⚡ Last projects on our platform.
+              </span>
+              <div class="h-[40rem] overflow-scroll">
               {#each projects as project}
                     <ProjectCard 
                         id={project.id}
@@ -80,6 +90,7 @@
                         main_page={true}
                     />
               {/each}
+            </div>
           </div>
         </div>
     </div>

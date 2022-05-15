@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Account</title>
+  <title>📝Account</title>
 </svelte:head>
 
 <script>
