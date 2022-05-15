@@ -8,7 +8,6 @@
   import Background from "../components/background.svelte";
   import Title from "../components/title.svelte";
   import ProjectCard from "../components/project_card.svelte";
-	import { Parallax, ParallaxLayer } from 'svelte-parallax';
 
   const projects = [
         { 
@@ -23,7 +22,8 @@
             total_contributor: 11,
             day_left: 84,
             img_src: './images/LBLOCK_bg.png',
-            tag: 'Gaming'
+            tag: 'Gaming',
+            green: true
         },{
             id: 50,
             title: "Galaxy",
@@ -78,7 +78,7 @@
                 📝 At a very low cost. Earn from 99% to 99.99% of your donations
               </p>
               <p>
-                🌳 10% of our income is donated to fight against climate change
+                🌳 We ensure that at least 15% of the projects on our platform are green
               </p>
           </span>
           <div class="h-[40rem] w-[20rem] ml-80 -mt-[2.75rem]">
@@ -98,6 +98,7 @@
                         img_src={project.img_src}
                         main_page={true}
                         tag={project.tag}
+                        green={project.green}
                     />
               {/each}
             </div>

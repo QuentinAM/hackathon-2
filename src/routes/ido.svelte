@@ -49,7 +49,8 @@
             total_contributor: 841,
             day_left: 2,
             img_src: './images/RAT_bg.png',
-            tag: 'RAT'
+            tag: 'RAT',
+            green: true
         }
     ];  
 
@@ -77,7 +78,8 @@
                     goal={project.goal}
                     money_earned={project.money_earned}
                     img_src={project.img_src}
-                    tag={project.tag}   
+                    tag={project.tag}
+                    green={project.green}  
                 />
             {/each}  
         </div>
