@@ -7,6 +7,7 @@
     export let money_earned;
     export let rating;
     export let img_src = 'https://picsum.photos/300';
+    export let main_page = false;
     import ProjectRating from "./project_rating.svelte";
 
     function Redirect()
@@ -16,7 +17,10 @@
 
 </script>
 
-<div class="rounded w-2/3 md:3/5 bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700">
+<div class=
+{main_page ? "rounded my-10 w-full md:3/5 bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700" : 
+ "rounded w-2/3 md:3/5 bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700" }>
+
     <img class="w-full h-40 rounded-t hover:cursor-pointer" on:click={Redirect} src={img_src} alt="">
     <div class="px-6 py-4">
       <div class="font-bold text-white text-xl mb-2">

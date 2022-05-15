@@ -7,6 +7,7 @@
     import Footer from "../components/footer.svelte";
     import Background from "../components/background.svelte";
     import Statscard from "../components/statscard.svelte";
+    import Review from "../components/review.svelte";
     import { RingLoader } from 'svelte-loading-spinners'
     import { onMount } from "svelte";
 
@@ -23,6 +24,7 @@
     let goal;
     let img_src;
     let id_front = '';
+    let reviews = [];
 
     const projects = [
         {
@@ -101,7 +103,29 @@
             goal: 7000,
             total_contributor: 841,
             day_left: 2,
-            img_src: './images/RAT_bg.png'
+            img_src: './images/RAT_bg.png',
+            reviews : [
+                {
+                    name: "Joe mama",
+                    joined_on: "November 2021",
+                    title: "Can't wait it to be launched",
+                    rating: 5,
+                    date: "21 March 2022",
+                    description: "Seems very cool",
+                    peoples: 20,
+                    img_src: 'https://randomuser.me/api/portraits/med/men/61.jpg'
+                },
+                {
+                    name: "Joe mama",
+                    joined_on: "November 2021",
+                    title: "Can't wait it to be launched",
+                    rating: 5,
+                    date: "21 March 2022",
+                    description: "Seems very cool",
+                    peoples: 20,
+                    img_src: 'https://randomuser.me/api/portraits/med/men/61.jpg'
+                }
+            ]
         },
         {
             id: 3453,
@@ -169,6 +193,7 @@
         crypto_used = prjt.crypto_used;
         crypto_link = prjt.crypto_link;
         img_src = prjt.img_src;
+        reviews = prjt.reviews;
 
         ShowUnshow();
 
@@ -177,7 +202,12 @@
 
     function ShowUnshow()
     {
-        document.getElementsByClassName('card')[0].classList.remove('hidden');
+        const card = document.getElementsByClassName('card');
+        for (const c of card)
+        {
+            c.classList.remove('hidden');
+        }
+
         document.getElementsByClassName('loader')[0].classList.add('hidden');   
     }
 
@@ -185,7 +215,7 @@
 
 <Navbar/>
 <Background/>
-<div class="pt-10 pb-0 md:pb-64">
+<div class="pt-4 pb-0 ">
     <!--Center -->
     <div class='container mx-auto ml-5 md:mx-64 md:mt-10 lg:px-4'>
         <div class="flex flex-wrap justify-center">
@@ -223,6 +253,24 @@
                         <button type="button" class="ml-5 px-6 active:bg-blue-900 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none mt-4 font-medium rounded-full text-sm py-2.5 text-center mb-2">
                             Invest
                         </button>
+                    </div>
+                    <hr class="border border-solid bg-slate-200 my-2 mx-3 card hidden">
+
+                    <div class="p-4 h-64 overflow-scroll card hidden">
+
+                        {#each reviews as review}
+                            <Review
+                                name={review.name}
+                                joined_on={review.joined_on}
+                                title={review.title}
+                                rating={review.rating}
+                                date={review.date}
+                                description={review.description}
+                                peoples={review.peoples}
+                                img_src={review.img_src}
+                            />
+                            <hr class="border border-solid bg-slate-600 my-3 mx-5">
+                        {/each}
                     </div>
                 </div>
             </div>

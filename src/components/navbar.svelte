@@ -1,27 +1,24 @@
 <script>
-    import Fa from 'svelte-fa'
-    import { faBahai, faBarsProgress, faBoltLightning, faBriefcase, faChartSimple, faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
-
     const routes = [
       {
         name: 'Home',
         route: '/',
-        icon: faBriefcase
+        icon: '🐀'
       },
       {
         name: 'ICO',
         route: '/ico',
-        icon: faBoltLightning
+        icon: '🖥️'
       },
       {
         name: 'IEO',
         route: '/ieo',
-        icon: faBarsProgress
+        icon: '🖇️'
       },
       {
         name: 'IDO',
         route: '/ido',
-        icon: faBahai
+        icon: '⚡'
       }
     ];
 
@@ -29,7 +26,7 @@
       {
         name: 'Account',
         route: '/account',
-        icon: faPeopleGroup
+        icon: '📝'
       }
     ];
 
@@ -37,14 +34,9 @@
       {
         name: 'About',
         route: '/about  ',
-        icon: faChartSimple
+        icon: '📜'
       }
     ];
-
-    let navbarOpen = false;
-    function ShowHideNavbar(){
-        navbarOpen = !navbarOpen;
-    }
 </script>
 
 <aside class="z-10" aria-label="Sidebar">
@@ -53,8 +45,7 @@
        {#each routes as route}
         <li>
           <a href={route.route} class="transition-all flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover-bg">  
-          <Fa icon={route.icon}/>
-          <span class="ml-3 text-xl">{route.name}</span>
+          <span class="ml-3 text-xl">{route.icon} {route.name}</span>
           </a>
         </li>
        {/each}
@@ -63,8 +54,7 @@
         {#each sub_routes as route}
           <li>
           <a href={route.route} class="transition-all flex items-center p-2 text-base font-normal text-gray-900 rounded-lg duration-75 hover-bg group">
-           <Fa icon={route.icon}/>
-           <span class="ml-3 text-xl">{route.name}</span>
+           <span class="ml-3 text-xl">{route.icon} {route.name}</span>
           </a>
         </li>
       {/each}
@@ -73,8 +63,7 @@
       {#each sub_sub_routes as route}
         <li>
         <a href={route.route} class="transition-all flex items-center p-2 text-base font-normal text-gray-900 rounded-lg duration-75 hover-bg group">
-         <Fa icon={route.icon}/>
-         <span class="ml-3 text-xl">{route.name}</span>
+         <span class="ml-3 text-xl">{route.icon} {route.name}</span>
         </a>
       </li>
     {/each}
