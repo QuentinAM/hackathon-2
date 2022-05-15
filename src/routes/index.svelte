@@ -75,7 +75,7 @@
                 💸 Make profit from investing in your favorite project
               </p>
               <p>
-                📝 At a very low cost. Earn from 99% to 99.99% of your donations
+                📝 At a very low cost. We only take from 0.01% to 1% from donations
               </p>
               <p>
                 🌳 We ensure that at least 15% of the projects on our platform are green
