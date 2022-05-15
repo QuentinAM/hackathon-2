@@ -1,14 +1,17 @@
 import adapter from '@sveltejs/adapter-static';
 
-/** @type {import('@sveltejs/kit').Config} */
 const config = {
- kit: {
-  adapter: adapter({
-    pages: 'build',
-    assets: 'build',
-    fallback: null
-  })
- }
+    kit: {
+        adapter: adapter({
+            pages: "docs",
+            assets: "docs"
+        }),
+        paths: {
+            // change below to your repo name
+            base: "/hackathon-2",
+        },
+    }
 };
+
 
 export default config;
