@@ -38,7 +38,19 @@
             goal: 10000,
             total_contributor: 11,
             day_left: 84,
-            img_src: './images/ICOM_bg.jpg'
+            img_src: './images/ICOM_bg.jpg',
+            reviews : [
+                {
+                    name: "Emil Peltola",
+                    joined_on: "November 2021",
+                    title: "Skeptical",
+                    rating: 2,
+                    date: "26 February 2022",
+                    description: "Read the whitepaper and I am still skeptical about the project. We will see",
+                    peoples: 19,
+                    img_src: 'https://randomuser.me/api/portraits/med/men/14.jpg'
+                }
+            ]
         },
         {
             id: 49,
@@ -51,7 +63,20 @@
             goal: 5000,
             total_contributor: 13,
             day_left: 107,
-            img_src: './images/ECOREAL_bg.png'
+            img_src: './images/ECOREAL_bg.png',
+            reviews : [
+                {
+                    name: "Ivonne Stemmer",
+                    joined_on: "July 2020",
+                    title: "Like Paypal but for crypto",
+                    rating: 4,
+                    date: "26 February 2022",
+                    description: "I can't wait to pay for my next painting in crypto thanks to this project",
+                    peoples: 5,
+                    img_src: 'https://randomuser.me/api/portraits/med/women/72.jpg'
+                }
+            ]
+
         },
         {
             id: 50,
@@ -77,7 +102,19 @@
             goal: 10000,
             total_contributor: 11,
             day_left: 84,
-            img_src: './images/CDFI_bg.png'
+            img_src: './images/CDFI_bg.png',
+            reviews : [
+                {
+                    name: "Olivia Morales",
+                    joined_on: "May 2018",
+                    title: "One of the most exciting",
+                    rating: 5,
+                    date: "26 February 2022",
+                    description: "Possible X100 in this project",
+                    peoples: 42,
+                    img_src: 'https://randomuser.me/api/portraits/med/women/80.jpg'
+                }
+            ]
         },
         {
             id: 46,
@@ -90,7 +127,19 @@
             goal: 5000,
             total_contributor: 13,
             day_left: 107,
-            img_src: './images/SCOP_bg.jpeg'
+            img_src: './images/SCOP_bg.jpeg',
+            reviews : [
+                {
+                    name: "Suzann Lee",
+                    joined_on: "March 2022",
+                    title: "One of the worst project I have seen",
+                    rating: 5,
+                    date: "1 April 2022",
+                    description: "I don't understand the project",
+                    peoples: 0,
+                    img_src: 'https://randomuser.me/api/portraits/women/27.jpg'
+                }
+            ]
         },
         {
             id: 47,
@@ -116,15 +165,25 @@
                     img_src: 'https://randomuser.me/api/portraits/med/men/61.jpg'
                 },
                 {
-                    name: "Joe mama",
-                    joined_on: "November 2021",
-                    title: "Can't wait it to be launched",
+                    name: "Huapala Pilis",
+                    joined_on: "December 2020",
+                    title: "RatDAO in my veins",
                     rating: 5,
-                    date: "21 March 2022",
-                    description: "Seems very cool",
+                    date: "May 2022",
+                    description: "To the Moon",
                     peoples: 20,
-                    img_src: 'https://randomuser.me/api/portraits/med/men/61.jpg'
-                }
+                    img_src: 'https://randomuser.me/api/portraits/med/men/33.jpg'
+                },
+                {
+                    name: "Huapala Pilis",
+                    joined_on: "December 2020",
+                    title: "RatDAO in my veins",
+                    rating: 5,
+                    date: "May 2022",
+                    description: "To the Moon",
+                    peoples: 17,
+                    img_src: 'https://randomuser.me/api/portraits/med/women/13.jpg'
+                },
             ]
         },
         {
@@ -138,7 +197,19 @@
             goal: 10000,
             total_contributor: 11,
             day_left: 84,
-            img_src: './images/LBLOCK_bg.png'
+            img_src: './images/LBLOCK_bg.png',
+            reviews : [
+                {
+                    name: "Jasmine Lewis",
+                    joined_on: "March 2021",
+                    title: "Future for Game developers",
+                    rating: 4,
+                    date: " 27 January 2021",
+                    description: "I believe that plateform will be used for e-sport in the next 5 years",
+                    peoples: 5,
+                    img_src: 'https://randomuser.me/api/portraits/women/77.jpg'
+                }
+            ]
         },
         {
             id: 4436,
@@ -149,9 +220,21 @@
             description: 'La plateforme ZKSpace se compose de trois parties principales : un DEX AMM de couche 2 utilisant la technologie ZK-Rollups ZKSwap v3, un service de paiement appelé ZKSquare et une place de marché NFT appelée ZKSea.',
             money_earned: 300,
             goal: 5000,
-            total_contributor: 13,
+            total_contributor: 21,
             day_left: 107,
-            img_src: './images/ZKS_bg.jpeg'
+            img_src: './images/ZKS_bg.jpeg',
+            reviews : [
+                {
+                    name: "Juho Lasko",
+                    joined_on: "June 2019",
+                    title: "Zk proof are the future",
+                    rating: 5,
+                    date: " 27 January 2021",
+                    description: "I don't understand why people rate this project this low",
+                    peoples: 11,
+                    img_src: 'https://randomuser.me/api/portraits/med/men/14.jpg'
+                }
+            ]
         },
         {
             id: 4346,
@@ -164,9 +247,10 @@
             goal: 7000,
             total_contributor: 841,
             day_left: 2,
-            img_src: './images/DEFY_bg.jpg'
+            img_src: './images/DEFY_bg.jpg',
         }
     ];
+
 
     let progress = tweened(0, {
 		    duration: 800,
