@@ -7,7 +7,7 @@
     export let crypto_link;
 </script>
 
-<section class="stats-card">
+<section class="stats-card px-6">
     <div class="stats">
       <div class="each-stat">
         <h1 class="top text-slate-200">{money_earned}</h1>
@@ -27,7 +27,7 @@
       <div class="each-stat">
         <h1 class="top text-slate-200">{crypto_used}</h1>
         <p class="bot">
-            <img class="w-6 h-6" src={crypto_link} alt="">
+            <img loading='lazy' class="w-6 h-6" src={crypto_link} alt="">
         </p>
       </div>
     </div>

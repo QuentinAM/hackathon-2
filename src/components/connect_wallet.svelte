@@ -1,4 +1,4 @@
-<div class="ml-10 mt-10 p-4 max-w-sm bg-white rounded-lg border shadow-md sm:p-6 dark:bg-gray-800 dark:border-gray-700">
+<div class="ml-12 md:ml-16 mt-10 mr-4 md:mr-0 p-4 max-w-sm bg-white rounded-lg border shadow-md sm:p-6 dark:bg-gray-800 dark:border-gray-700">
     <h5 class="mb-3 text-base font-semibold text-gray-900 lg:text-xl dark:text-white">
         Connect wallet
     </h5>

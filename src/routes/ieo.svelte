@@ -20,7 +20,8 @@
             goal: 10000,
             total_contributor: 11,
             day_left: 84,
-            img_src: './images/ICOM_bg.jpg'
+            img_src: './images/ICOM_bg.jpg',
+            tag: 'Com'
         },
         {
             id: 49,
@@ -33,7 +34,8 @@
             goal: 5000,
             total_contributor: 13,
             day_left: 107,
-            img_src: './images/ECOREAL_bg.png'
+            img_src: './images/ECOREAL_bg.png',
+            tag: 'Payments'
         },
         {
             id: 50,
@@ -46,7 +48,8 @@
             goal: 7000,
             total_contributor: 841,
             day_left: 2,
-            img_src: './images/GAL_bg.jpg'
+            img_src: './images/GAL_bg.jpg',
+            tag: 'Marketing'
         }
     ]
 
@@ -54,16 +57,16 @@
 
 <Navbar/>
 <Background/>
-<div class="pt-20 pb-64">
-    <div class="ml-64">
-        <h1 class="text-4xl font-bold leading-tight">
+<div class="pt-20 pb-[8rem] lg:pb-64">
+    <div class="ml-10 md:ml-64">
+        <h1 class="text-4xl md:ml-0 ml-10 font-bold leading-tight">
             <span class="text-slate-300">IEO</span>
         </h1>
-        <h2 class="text-lg font-semibold leading-tight">
+        <h2 class="text-lg md:ml-0 ml-10 font-semibold leading-tight">
             <span class="text-slate-300">Initial exchange offering</span>
         </h2>
 
-        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+        <div class="p-10 -mb-40 overflow-auto h-[40rem] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
             {#each projects as project}
                 <ProjectCard 
                     id={project.id}
@@ -74,6 +77,7 @@
                     goal={project.goal}
                     money_earned={project.money_earned}
                     img_src={project.img_src}
+                    tag={project.tag}
                 />
             {/each}  
         </div>

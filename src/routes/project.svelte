@@ -7,6 +7,7 @@
     import Footer from "../components/footer.svelte";
     import Background from "../components/background.svelte";
     import Statscard from "../components/statscard.svelte";
+    import Review from "../components/review.svelte";
     import { RingLoader } from 'svelte-loading-spinners'
     import { onMount } from "svelte";
 
@@ -23,6 +24,7 @@
     let goal;
     let img_src;
     let id_front = '';
+    let reviews = [];
 
     const projects = [
         {
@@ -36,7 +38,19 @@
             goal: 10000,
             total_contributor: 11,
             day_left: 84,
-            img_src: './images/ICOM_bg.jpg'
+            img_src: './images/ICOM_bg.jpg',
+            reviews : [
+                {
+                    name: "Emil Peltola",
+                    joined_on: "November 2021",
+                    title: "Skeptical",
+                    rating: 2,
+                    date: "26 February 2022",
+                    description: "Read the whitepaper and I am still skeptical about the project. We will see",
+                    peoples: 19,
+                    img_src: 'https://randomuser.me/api/portraits/med/men/14.jpg'
+                }
+            ]
         },
         {
             id: 49,
@@ -49,7 +63,20 @@
             goal: 5000,
             total_contributor: 13,
             day_left: 107,
-            img_src: './images/ECOREAL_bg.png'
+            img_src: './images/ECOREAL_bg.png',
+            reviews : [
+                {
+                    name: "Ivonne Stemmer",
+                    joined_on: "July 2020",
+                    title: "Like Paypal but for crypto",
+                    rating: 4,
+                    date: "26 February 2022",
+                    description: "I can't wait to pay for my next painting in crypto thanks to this project",
+                    peoples: 5,
+                    img_src: 'https://randomuser.me/api/portraits/med/women/72.jpg'
+                }
+            ]
+
         },
         {
             id: 50,
@@ -75,7 +102,19 @@
             goal: 10000,
             total_contributor: 11,
             day_left: 84,
-            img_src: './images/CDFI_bg.png'
+            img_src: './images/CDFI_bg.png',
+            reviews : [
+                {
+                    name: "Olivia Morales",
+                    joined_on: "May 2018",
+                    title: "One of the most exciting",
+                    rating: 5,
+                    date: "26 February 2022",
+                    description: "Possible X100 in this project",
+                    peoples: 42,
+                    img_src: 'https://randomuser.me/api/portraits/med/women/80.jpg'
+                }
+            ]
         },
         {
             id: 46,
@@ -88,7 +127,19 @@
             goal: 5000,
             total_contributor: 13,
             day_left: 107,
-            img_src: './images/SCOP_bg.jpeg'
+            img_src: './images/SCOP_bg.jpeg',
+            reviews : [
+                {
+                    name: "Suzann Lee",
+                    joined_on: "March 2022",
+                    title: "One of the worst project I have seen",
+                    rating: 0.6 ,
+                    date: "1 April 2022",
+                    description: "I don't understand the project",
+                    peoples: 0,
+                    img_src: 'https://randomuser.me/api/portraits/women/27.jpg'
+                }
+            ]
         },
         {
             id: 47,
@@ -101,7 +152,39 @@
             goal: 7000,
             total_contributor: 841,
             day_left: 2,
-            img_src: './images/RAT_bg.png'
+            img_src: './images/RAT_bg.png',
+            reviews : [
+                {
+                    name: "Joe mama",
+                    joined_on: "November 2021",
+                    title: "Can't wait it to be launched",
+                    rating: 5,
+                    date: "21 March 2022",
+                    description: "Seems very cool",
+                    peoples: 20,
+                    img_src: 'https://randomuser.me/api/portraits/med/men/61.jpg'
+                },
+                {
+                    name: "Huapala Pilis",
+                    joined_on: "December 2020",
+                    title: "RatDAO in my veins",
+                    rating: 5,
+                    date: "May 2022",
+                    description: "To the Moon",
+                    peoples: 20,
+                    img_src: 'https://randomuser.me/api/portraits/med/men/33.jpg'
+                },
+                {
+                    name: "Huapala Pilis",
+                    joined_on: "December 2020",
+                    title: "RatDAO in my veins",
+                    rating: 5,
+                    date: "May 2022",
+                    description: "To the Moon",
+                    peoples: 17,
+                    img_src: 'https://randomuser.me/api/portraits/med/women/13.jpg'
+                },
+            ]
         },
         {
             id: 3453,
@@ -114,7 +197,19 @@
             goal: 10000,
             total_contributor: 11,
             day_left: 84,
-            img_src: './images/LBLOCK_bg.png'
+            img_src: './images/LBLOCK_bg.png',
+            reviews : [
+                {
+                    name: "Jasmine Lewis",
+                    joined_on: "March 2021",
+                    title: "Future for Game developers",
+                    rating: 4,
+                    date: " 27 January 2021",
+                    description: "I believe that plateform will be used for e-sport in the next 5 years",
+                    peoples: 5,
+                    img_src: 'https://randomuser.me/api/portraits/women/77.jpg'
+                }
+            ]
         },
         {
             id: 4436,
@@ -125,9 +220,21 @@
             description: 'La plateforme ZKSpace se compose de trois parties principales : un DEX AMM de couche 2 utilisant la technologie ZK-Rollups ZKSwap v3, un service de paiement appelé ZKSquare et une place de marché NFT appelée ZKSea.',
             money_earned: 300,
             goal: 5000,
-            total_contributor: 13,
+            total_contributor: 21,
             day_left: 107,
-            img_src: './images/ZKS_bg.jpeg'
+            img_src: './images/ZKS_bg.jpeg',
+            reviews : [
+                {
+                    name: "Juho Lasko",
+                    joined_on: "June 2019",
+                    title: "Zk proof are the future",
+                    rating: 5,
+                    date: " 27 January 2021",
+                    description: "I don't understand why people rate this project this low",
+                    peoples: 11,
+                    img_src: 'https://randomuser.me/api/portraits/med/men/14.jpg'
+                }
+            ]
         },
         {
             id: 4346,
@@ -140,9 +247,23 @@
             goal: 7000,
             total_contributor: 841,
             day_left: 2,
-            img_src: './images/DEFY_bg.jpg'
+            img_src: './images/DEFY_bg.jpg',
+        },
+        {
+            id: 4545,
+            title: "Peermoon",
+            crypto_used : "PM",
+            crypto_link: 'https://cryptototem.com/wp-content/uploads/2022/01/Peermoon-logo.jpg',
+            rating : "4.8",
+            description: 'Peermoon is a DeFi mobile wallet that allows you investing and managing your finance conveniently in one app.',
+            money_earned: 2500,
+            goal: 7000,
+            total_contributor: 642,
+            day_left: 7,
+            img_src: 'https://peermoon.io/wp-content/uploads/2021/12/earth6.png'
         }
     ];
+
 
     let progress = tweened(0, {
 		    duration: 800,
@@ -169,6 +290,7 @@
         crypto_used = prjt.crypto_used;
         crypto_link = prjt.crypto_link;
         img_src = prjt.img_src;
+        reviews = prjt.reviews;
 
         ShowUnshow();
 
@@ -177,7 +299,12 @@
 
     function ShowUnshow()
     {
-        document.getElementsByClassName('card')[0].classList.remove('hidden');
+        const card = document.getElementsByClassName('card');
+        for (const c of card)
+        {
+            c.classList.remove('hidden');
+        }
+
         document.getElementsByClassName('loader')[0].classList.add('hidden');   
     }
 
@@ -185,12 +312,12 @@
 
 <Navbar/>
 <Background/>
-<div class="pt-20 pb-64">
+<div class="pt-4 pb-0 ">
     <!--Center -->
-    <div class='container mx-auto px-4'>
+    <div class='container mx-auto ml-5 md:mx-64 md:mt-10 lg:px-4'>
         <div class="flex flex-wrap justify-center">
-            <div class="w-full md:w-3/4 lg:w-2/3 p-4">
-                <div class="dark:bg-gray-800 border dark:border-gray-700 shadow-md rounded px-6 pt-6 pb-6 mb-4">
+            <div class="w-3/4 md:w-3/4 lg:w-2/3 lg:p-4">
+                <div class="dark:bg-gray-800 border dark:border-gray-700 shadow-md rounded pt-6 pb-6 mb-4">
                     <div class="loader flex">
                         <RingLoader/>
                         <div class="w-full">
@@ -200,15 +327,15 @@
                         </div>  
                     </div>
                     <div class="card hidden">
-                        <img class="w-full h-52 rounded-tl object-cover -m-6" src={img_src} alt="">
-                        <div class="flex flex-wrap">
+                        <img loading='lazy' class="w-full h-52 rounded-tl object-cover -my-6" src={img_src} alt="">
+                        <div class="flex px-6 flex-wrap">
                             <div class="w-full">
                                 <h1 class="text-2xl text-white font-bold text-center dark:bg-gray-800 dark:border-gray-700 p-4 rounded-3xl">
                                     {title}
                                 </h1>
                             </div>
                         </div>
-                        <div class="flex flex-wrap">
+                        <div class="flex px-6 flex-wrap">
                             <div class="w-full">
                                 <p class="text-gray-500 dark:text-gray-400 text-center">
                                     {description}
@@ -217,17 +344,37 @@
                         </div>
                         
                         <Statscard {goal} {money_earned} {total_contributor} {day_left} {crypto_used} {crypto_link}/>
-                        <progress value={$progress}></progress>
-                        <button type="button" class="text-white bg-blue-800 hover:bg-blue-900 focus:outline-none mt-4 focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2">
+                        <div class='px-6'>
+                            <progress value={$progress}></progress>
+                        </div>
+                        <button type="button" class="ml-5 px-6 active:bg-blue-900 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none mt-4 font-medium rounded-full text-sm py-2.5 text-center mb-2">
                             Invest
                         </button>
+                    </div>
+                    <hr class="border border-solid bg-slate-200 my-2 mx-3 card hidden">
+
+                    <div class="p-4 h-64 overflow-auto card hidden">
+
+                        {#each reviews as review}
+                            <Review
+                                name={review.name}
+                                joined_on={review.joined_on}
+                                title={review.title}
+                                rating={review.rating}
+                                date={review.date}
+                                description={review.description}
+                                peoples={review.peoples}
+                                img_src={review.img_src}
+                            />
+                            <hr class="border border-solid bg-slate-600 my-3 mx-5">
+                        {/each}
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<Footer class="mt-96"/>
+<Footer/>
 
 <style>
     progress {
