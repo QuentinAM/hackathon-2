@@ -72,7 +72,7 @@
                 💸 Invest in your favorite project and get interest on it.
               </p>
           </span>
-          <div class="h-[40rem] w-[20rem] ml-80 ">
+          <div class="h-[40rem] w-[20rem] ml-80 -mt-[2.75rem]">
               <span class="text-slate-300 font-semibold text-lg">
                 ⚡ Last projects on our platform.
               </span>
