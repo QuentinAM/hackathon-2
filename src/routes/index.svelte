@@ -62,7 +62,7 @@
         <Title/>
         <h2 class="text-focus-in text-lg md:ml-14 ml-10 font-semibold leading-tight">
           <span class="text-slate-300">
-            🚀 Your new cypto launching platform.
+            🚀 Your new crypto crowdfunding platform.
           </span>
         </h2>
         <div class="flex text-focus-in2 pt-10">
