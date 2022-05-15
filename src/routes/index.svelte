@@ -66,13 +66,19 @@
           </span>
         </h2>
         <div class="flex text-focus-in2 pt-10">
-          <span class="text-slate-300 mt-10 ml-20 font-semibold leading-[2.75rem] shadow border-slate-400 text-xl border p-2 rounded h-40">
-              🌍 Explore a large selection of projects and start your own.
+          <span class="text-slate-300 mt-10 ml-20 font-semibold leading-[2.75rem] shadow border-slate-400 text-xl border p-2 rounded h-60">
+              🌍 Explore a large selection of projects and start your own
               <p>
-                ⚙️ Easy to use.
+                ⚙️ Easy to use
               </p>
               <p>
-                💸 Invest in your favorite project and get interest on it.
+                💸 Make profit from investing in your favorite project
+              </p>
+              <p>
+                📝 At a very low cost. Earn from 99% to 99.99% of your donations
+              </p>
+              <p>
+                🌳 10% of our income is donated to fight against climate change
               </p>
           </span>
           <div class="h-[40rem] w-[20rem] ml-80 -mt-[2.75rem]">
