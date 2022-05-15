@@ -7,7 +7,8 @@ const config = {
 		adapter: adapter()
 	},
 	paths:{
-		base: '/hackathon-2'
+		base: '/hackathon-2',
+		appDir: 'internal',
 	},
 	prerender:{
 		default: true
