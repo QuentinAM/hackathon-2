@@ -1,9 +1,9 @@
 import { publish } from 'gh-pages';
 
 publish(
-    'public', // path to public directory
+    'https://github.com/QuentinAM/hackathon-2/tree/front', // path to public directory
     {
-        branch: 'gh-pages',
+        branch: 'front',
         repo: 'https://quentinam.github.io/hackathon-2/', // Update to point to your repository  
         user: {
             name: 'quentinam', // update to use your name
