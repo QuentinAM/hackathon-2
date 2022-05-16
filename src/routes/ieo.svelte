@@ -35,7 +35,8 @@
             total_contributor: 13,
             day_left: 107,
             img_src: './images/ECOREAL_bg.png',
-            tag: 'Payments'
+            tag: 'Payments',
+            green: true
         },
         {
             id: 50,
@@ -78,6 +79,7 @@
                     money_earned={project.money_earned}
                     img_src={project.img_src}
                     tag={project.tag}
+                    green={project.green}
                 />
             {/each}  
         </div>

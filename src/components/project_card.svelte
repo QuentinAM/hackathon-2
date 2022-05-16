@@ -9,6 +9,7 @@
     export let tag;
     export let img_src = 'https://picsum.photos/300';
     export let main_page = false;
+    export let green = false;
     import ProjectRating from "./project_rating.svelte";
 
     function Redirect()
@@ -41,6 +42,11 @@
         {#if tag !== undefined}
         <span class="inline-block bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-900 mr-2 mb-2">
             {tag}
+        </span>
+        {/if}
+        {#if green}
+        <span class="inline-block bg-green-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-900 mr-2 mb-2">
+            Green
         </span>
         {/if}
     </div>

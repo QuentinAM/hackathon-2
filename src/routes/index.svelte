@@ -8,7 +8,6 @@
   import Background from "../components/background.svelte";
   import Title from "../components/title.svelte";
   import ProjectCard from "../components/project_card.svelte";
-	import { Parallax, ParallaxLayer } from 'svelte-parallax';
 
   const projects = [
         { 
@@ -23,7 +22,8 @@
             total_contributor: 11,
             day_left: 84,
             img_src: './images/LBLOCK_bg.png',
-            tag: 'Gaming'
+            tag: 'Gaming',
+            green: true
         },{
             id: 50,
             title: "Galaxy",
@@ -62,7 +62,7 @@
         <Title/>
         <h2 class="text-focus-in text-lg md:ml-14 ml-10 font-semibold leading-tight">
           <span class="text-slate-300">
-            🚀 Your new cypto launching platform.
+            🚀 Your new crypto crowdfunding platform.
           </span>
         </h2>
         <div class="flex text-focus-in2 pt-10">
@@ -75,15 +75,15 @@
                 💸 Make profit from investing in your favorite project
               </p>
               <p>
-                📝 At a very low cost. Earn from 99% to 99.99% of your donations
+                📝 At a very low cost. We only take from 0.01% to 1% from donations
               </p>
               <p>
-                🌳 10% of our income is donated to fight against climate change
+                🌳 We ensure that at least 15% of the projects on our platform are green
               </p>
           </span>
           <div class="h-[40rem] w-[20rem] ml-80 -mt-[2.75rem]">
               <span class="text-slate-300 font-semibold text-lg">
-                ⚡ Last projects on our platform.
+                ⚡ Last projects on CrowdCrypto
               </span>
               <div class="h-[40rem] overflow-auto">
               {#each projects as project}
@@ -98,6 +98,7 @@
                         img_src={project.img_src}
                         main_page={true}
                         tag={project.tag}
+                        green={project.green}
                     />
               {/each}
             </div>

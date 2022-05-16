@@ -21,7 +21,8 @@
             total_contributor: 11,
             day_left: 84,
             img_src: './images/LBLOCK_bg.png',
-            tag: 'Gaming'
+            tag: 'Gaming',
+            green: true
         },
         {
             id: 4436,
@@ -92,6 +93,7 @@
                     money_earned={project.money_earned}
                     img_src={project.img_src}
                     tag={project.tag}
+                    green={project.green}
                 />
             {/each}  
         </div>

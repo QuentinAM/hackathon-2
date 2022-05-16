@@ -12,13 +12,13 @@
 {#if isSmallScreen}
   <svg height="100" width="320" stroke="#2A4A73" stroke-width="2" class="text-line">
     <text style="font-family: 'Baloo Tamma', georgia, times, serif; font-weight: normal; font-style: normal" x="50" y="10" fill="none" font-size = "65">
-      RatFund
+      CrowdCrypto
     </text>
   </svg>
 {:else}
   <svg height="100" width="1000" stroke="#2A4A73" stroke-width="2" class="text-line">
       <text style="font-family: 'Baloo Tamma', georgia, times, serif; font-weight: normal; font-style: normal" x="50" y="90" fill="none" font-size = "100">
-        RatFund
+        CrowdCrypto
       </text>
   </svg>
 {/if}
